@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <h1 class="text-center mb-4">Weather App 🌤️</h1>
+
+        <!-- Search -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+
+                <div class="input-group">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+
+                    <button id="searchBtn" class="btn btn-primary">
+                        Search
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Weather Card -->
+        <div class="row justify-content-center">
+
+            <div class="col-md-5">
+
+                <div class="card weather-card text-center">
+
+                    <div class="card-body">
+
+                        <h2 id="city"></h2>
+
+                        <div class="weather-icon">
+                            ☀️
+                        </div>
+
+                        <h1 id="temperature">28°C</h1>
+
+                        <p id="description">
+                            Clear Sky
+                        </p>
+
+
+                        <!-- Weather Details -->
+                        <div class="row mt-4">
+
+                            <div class="col-4">
+                                <div class="border rounded p-2">
+                                    <div>💧</div>
+                                    <small>Humidity</small>
+                                    <h6 id="humidity">65%</h6>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="border rounded p-2">
+                                    <div>💨</div>
+                                    <small>Wind</small>
+                                    <h6 id="wind">12 km/h</h6>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="border rounded p-2">
+                                    <div>🌡️</div>
+                                    <small>Feels Like</small>
+                                    <h6 id="feelsLike">30°C</h6>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
